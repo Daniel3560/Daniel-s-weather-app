@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="weather-app-container" class="app-container">
+        <header class="app-header">
+            <h1>Daniel's Weather App</h1>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name..." class="city-input">
+            <button id="search-button" class="search-button">
+                <i class="fas fa-search"></i> Get Weather
+            </button>
+        </div>
+
+        <div id="loading-spinner" class="loading-spinner hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <div id="error-message" class="error-message hidden">
+            </div>
+
+        <div id="weather-display" class="weather-display hidden">
+            <h2 id="city-name" class="city-name"></h2>
+            <div class="temperature-info">
+                <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+                <p id="temperature" class="temperature"></p>
+            </div>
+            <p id="description" class="description"></p>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <p>Humidity: <span id="humidity"></span></p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-cloud"></i>
+                    <p>Clouds: <span id="clouds"></span></p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-thermometer-half"></i>
+                    <p>Feels Like: <span id="feels-like"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
