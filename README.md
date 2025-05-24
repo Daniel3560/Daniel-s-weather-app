@@ -4,7 +4,7 @@ My Simple Weather App
 What This App Does
 This is a website that shows you the current weather for any city in the world.
 
-✨ Live Demo:  ✨
+✨ Live Demo:https://github.com/Daniel3560/Daniel-s-weather-app.git  ✨
 
 
 You type in a city name, and it tells you the temperature, what the weather feels like, how windy it is, humidity, and how cloudy it is.
